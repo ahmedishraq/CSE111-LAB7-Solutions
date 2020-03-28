@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Test{
+  public static void main(String [] args){
+    Scanner sc=new Scanner(System.in);
+    
+    String s="Hello";
+    int [] array=s.toCharArray();
+    char actual=sc.next().charAt(0);
+    char charRepWith=sc.next().charAt(0);
+    
+    String output="";
+    
+    int count=0;
+    
+    for(int index=0;index<s.length();index++){
+      if(array[index]==actual && count==0){
+        output=output+charRepWith;
+        count++;
+      }
+      else{
+        output=output+arrau[count];
+      }
+    }
+    
+    System.out.println(output);
+  }
+}
